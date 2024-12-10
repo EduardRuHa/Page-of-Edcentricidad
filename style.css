@@ -28,6 +28,15 @@ header h1 {
     padding: 20px;
 }
 
+a.tiktok-link {
+    color: #ffeaa7;
+    text-decoration: none;
+}
+
+a.tiktok-link:hover {
+    text-decoration: underline;
+}
+
 .box {
     width: calc(27.5% - 20px);
     background: rgba(255, 255, 255, 0.1);
@@ -65,10 +74,9 @@ main {
     flex-grow: 1;
 }
 
-/* Redondeo de bordes para los videos */
 iframe {
-    width: 300px; /* Ajusta el ancho como desees */
-    height: 500px; /* Ajusta la altura como desees */
-    border-radius: 15px; /* Redondea los bordes de los videos */
-    overflow: hidden; /* Asegura que el contenido no sobresalga de los bordes redondeados */
+    width: 300px;
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
 }
