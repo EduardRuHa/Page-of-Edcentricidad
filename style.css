@@ -29,7 +29,7 @@ header h1 {
 }
 
 .box {
-    width: calc(25% - 20px);
+    width: calc(27.5% - 20px);
     background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     padding: 20px;
@@ -63,4 +63,12 @@ footer {
 
 main {
     flex-grow: 1;
+}
+
+/* Redondeo de bordes para los videos */
+iframe {
+    width: 300px; /* Ajusta el ancho como desees */
+    height: 500px; /* Ajusta la altura como desees */
+    border-radius: 15px; /* Redondea los bordes de los videos */
+    overflow: hidden; /* Asegura que el contenido no sobresalga de los bordes redondeados */
 }
