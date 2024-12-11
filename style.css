@@ -28,30 +28,6 @@ header h1 {
     padding: 20px;
 }
 
-#Sabias\ que {
-    order: 1;
-}
-
-#Recetas {
-    order: 2;
-}
-
-#Noticias {
-    order: 3;
-}
-
-#Comedia {
-    order: 4;
-}
-
-#Reviews {
-    order: 5;
-}
-
-#Parodias {
-    order: 6;
-}
-
 a.tiktok-link {
     color: #ffeaa7;
     text-decoration: none;
@@ -62,7 +38,7 @@ a.tiktok-link:hover {
 }
 
 .box {
-    width: calc(25% - 20px);
+    width: calc(25% - 20px); /* Ajusta el ancho de la caja */
     background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     padding: 20px;
