@@ -21,26 +21,24 @@ header {
 }
 
 .header-image {
-    width: 205px;
+    width: 55px;
     height: auto;
-    position: absolute;
-    top: 0px;
-    left: 0px;
+    position: left;
+    border-radius: 25%;
+    top: 15px;
+    left: 20px;
 }
 
 .header-left {
     flex-grow: 1;
     display: flex;
     justify-content: center;
-    padding-left: 395px;
 }
 
 .header-right {
-    flex-grow: 1;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     gap: 15px;
-    padding-left: 235px;
 }
 
 header h1 {
@@ -115,5 +113,70 @@ footer {
 main {
     flex-grow: 1;
     overflow-y: auto;
-    padding-bottom: 50px;
+    padding-bottom: 50px; 
+}
+
+#contacto {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 100px;
+    
+}
+
+#contacto h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+#contacto p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-right: 20px;
+}
+
+.contact-form label {
+    font-size: 1em;
+    text-align: left;
+    color: #fff;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    border: 2px solid #4a90e2;
+}
+
+.contact-form button {
+    background: #4a90e2;
+    color: #fff;
+    font-size: 1em;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #357ab7;
 }
