@@ -8,6 +8,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 header {
@@ -17,21 +18,51 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding-right: 30px;
 }
 
-.header-content {
+.header-image {
+    width: 205px;
+    height: auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.header-left {
+    flex-grow: 1;
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 100%;
+    padding-left: 395px;
+}
+
+.header-right {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-left: 235px;
 }
 
 header h1 {
     font-size: 2.5em;
     margin: 0;
     text-align: center;
-    flex-grow: 1;
+}
+
+.facebook-button, .tiktok-button {
+    text-decoration: none;
+}
+
+.facebook-icon, .tiktok-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 21%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s;
+}
+
+.facebook-icon:hover, .tiktok-icon:hover {
+    transform: scale(1.1);
 }
 
 .bienvenida-parrafo {
@@ -83,21 +114,6 @@ footer {
 
 main {
     flex-grow: 1;
-}
-
-.facebook-button, .tiktok-button {
-    text-decoration: none;
-    margin-left: 15px;
-}
-
-.facebook-icon, .tiktok-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 21%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    transition: transform 0.2s;
-}
-
-.facebook-icon:hover, .tiktok-icon:hover {
-    transform: scale(1.1);
+    overflow-y: auto;
+    padding-bottom: 50px;
 }
